@@ -93,6 +93,16 @@ class _HomeState extends State<Home> {
                 ),
                 TransectionContainer(),
                 Padding(
+                  padding: const EdgeInsets.only(top: 10, right: 30, left: 30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text('offers for you'.toUpperCase()),
+                      Text('view all >'.toUpperCase())
+                    ],
+                  ),
+                ),
+                Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
