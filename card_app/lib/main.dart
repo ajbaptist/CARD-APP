@@ -1,6 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:card_app/currentBalance.dart';
 import 'package:card_app/data.dart';
+import 'package:card_app/pharmacy.dart';
 import 'package:card_app/transection.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -102,36 +103,7 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Container(
-                        height: 200,
-                        color: Colors.white,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            Image.asset(
-                              'assets/pic.jpg',
-                              height: 150,
-                              width: double.infinity,
-                              fit: BoxFit.cover,
-                            ),
-                            Text(
-                              'Appolo pharmacy',
-                              style: blackClr,
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              'upto 15% off at appolo pharmacy',
-                              style: greyClr,
-                              textAlign: TextAlign.center,
-                            )
-                          ],
-                        )),
-                  ),
-                )
+                Pharmacy(),
               ],
             ),
           ))
@@ -140,92 +112,3 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// class Home extends StatefulWidget {
-//   const Home({Key? key}) : super(key: key);
-
-//   @override
-//   _HomeState createState() => _HomeState();
-// }
-
-// class _HomeState extends State<Home> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.black,
-//       body: Column(
-//         children: [
-//           Container(
-//             child: Padding(
-//                 padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
-//                 child: Row(
-//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                   children: [
-//                     Text('Current Balance'),
-//                     Icon(FontAwesomeIcons.alignCenter)
-//                   ],
-//                 )),
-//           ),
-//           Flexible(
-//             child: Padding(
-//               padding: const EdgeInsets.all(10.0),
-//               child: Container(
-//                 decoration: BoxDecoration(
-//                     color: Colors.white,
-//                     borderRadius: BorderRadius.circular(20)),
-//                 child: column(),
-//               ),
-//             ),
-//           ),
-//           Container(
-//             child: Padding(
-//                 padding: const EdgeInsets.only(
-//                     top: 20, left: 30, right: 30, bottom: 20),
-//                 child: Row(
-//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                   children: [
-//                     Text('recent tansections'),
-//                     Text(
-//                       'view all >',
-//                       style: greyClr,
-//                     )
-//                   ],
-//                 )),
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-
