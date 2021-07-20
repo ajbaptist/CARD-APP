@@ -1,6 +1,5 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:card_app/currentBalance.dart';
-import 'package:card_app/data.dart';
 import 'package:card_app/pharmacy.dart';
 import 'package:card_app/transection.dart';
 import 'package:flutter/material.dart';
